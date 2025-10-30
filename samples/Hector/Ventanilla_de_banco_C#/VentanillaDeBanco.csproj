@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <!-- Excluir ficheros del folder tests para evitar que el proyecto principal compile los tests -->
+  <ItemGroup>
+    <Compile Remove="tests\**\*.cs" />
+    <None Remove="tests\**\*" />
+  </ItemGroup>
+</Project>

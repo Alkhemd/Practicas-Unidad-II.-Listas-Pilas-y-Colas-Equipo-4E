@@ -1,0 +1,15 @@
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.GeneratedMSBuildEditorConfig.editorconfig
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.AssemblyInfoInputs.cache
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.AssemblyInfo.cs
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.csproj.CoreCompileInputs.cache
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.sourcelink.json
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\bin\Debug\net9.0\csharp_solucion.exe
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\bin\Debug\net9.0\csharp_solucion.deps.json
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\bin\Debug\net9.0\csharp_solucion.runtimeconfig.json
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\bin\Debug\net9.0\csharp_solucion.dll
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\bin\Debug\net9.0\csharp_solucion.pdb
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.dll
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\refint\csharp_solucion.dll
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.pdb
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\csharp_solucion.genruntimeconfig.cache
+c:\Practicas-Unidad-II.-Listas-Pilas-y-Colas-Equipo-4E\samples\Uziel\csharp_solucion\obj\Debug\net9.0\ref\csharp_solucion.dll
