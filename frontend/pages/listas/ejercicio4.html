@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Eliminar y ordenar productos</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Listas</a>
+                <h1 class="title">Ejercicio 4: Gestión de Productos</h1>
+                <p class="subtitle">Eliminar y ordenar productos</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Sistema de gestión de productos que permite agregar, eliminar y ordenar productos por diferentes criterios.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> Los productos se pueden ordenar por nombre o por precio.</p>
+                </div>
+
+                <!-- Sección Interactiva -->
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="codigoProducto">Código:</label>
+                            <input type="text" id="codigoProducto" placeholder="Ej: P001">
+                        </div>
+                        <div class="input-group">
+                            <label for="nombreProducto">Nombre:</label>
+                            <input type="text" id="nombreProducto" placeholder="Ej: Laptop">
+                        </div>
+                        <div class="input-group">
+                            <label for="precioProducto">Precio:</label>
+                            <input type="number" id="precioProducto" placeholder="Ej: 15000" min="0" step="0.01">
+                        </div>
+                        <button onclick="agregarProducto()" class="btn btn-primary">➕ Agregar</button>
+                    </div>
+
+                    <div class="controls">
+                        <button onclick="ordenarPorNombre()" class="btn btn-secondary">🔤 Ordenar por Nombre</button>
+                        <button onclick="ordenarPorPrecio()" class="btn btn-secondary">💰 Ordenar por Precio</button>
+                        <button onclick="limpiarProductos()" class="btn btn-danger">🗑️ Limpiar Todo</button>
+                    </div>
+
+                    <div class="products-table">
+                        <h4>📦 Lista de Productos</h4>
+                        <div id="tablaProductos" class="table-container"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/listas/ejercicio4.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

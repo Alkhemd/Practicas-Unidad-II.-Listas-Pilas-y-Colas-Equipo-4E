@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Productos disponibles y retirados</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Listas</a>
+                <h1 class="title">Ejercicio 1: Supermercado</h1>
+                <p class="subtitle">Productos disponibles y retirados</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Este ejercicio implementa un sistema de gestión de productos en un carrito de compras de supermercado.
+                    Permite agregar productos con cantidad y precio aleatorios, retirar productos del carrito, y mostrar
+                    tanto los productos disponibles como los que han sido retirados.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> Este ejercicio utiliza listas (List) para almacenar y gestionar los productos.</p>
+                </div>
+
+                <!-- Sección Interactiva -->
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="productName">Nombre del producto:</label>
+                            <input type="text" id="productName" placeholder="Ej: Manzanas">
+                        </div>
+                        <button onclick="agregarProducto()" class="btn btn-primary">➕ Agregar Producto</button>
+                        <button onclick="limpiarListas()" class="btn btn-secondary">🗑️ Limpiar Todo</button>
+                    </div>
+
+                    <div class="lists-container">
+                        <div class="list-box">
+                            <h4>🛒 Productos Disponibles</h4>
+                            <div id="productosDisponibles" class="product-list"></div>
+                        </div>
+                        
+                        <div class="list-box">
+                            <h4>❌ Productos Retirados</h4>
+                            <div id="productosRetirados" class="product-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/listas/ejercicio1.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

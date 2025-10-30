@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Suma de números grandes</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Pilas</a>
+                <h1 class="title">Ejercicio 3: Suma de Números Grandes</h1>
+                <p class="subtitle">Usando pilas para sumar números muy grandes</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Este ejercicio suma números muy grandes (que exceden el límite de los tipos numéricos estándar) usando pilas para procesar dígito por dígito.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> Puede sumar números de cualquier longitud.</p>
+                </div>
+
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="numero1">Primer número:</label>
+                            <input type="text" id="numero1" placeholder="Ej: 123456789012345">
+                        </div>
+                        <div class="input-group">
+                            <label for="numero2">Segundo número:</label>
+                            <input type="text" id="numero2" placeholder="Ej: 987654321098765">
+                        </div>
+                        <button onclick="sumarNumeros()" class="btn btn-primary">➕ Sumar</button>
+                        <button onclick="limpiar()" class="btn btn-secondary">🗑️ Limpiar</button>
+                    </div>
+
+                    <div id="resultado" class="result-display"></div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/pilas/ejercicio3.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

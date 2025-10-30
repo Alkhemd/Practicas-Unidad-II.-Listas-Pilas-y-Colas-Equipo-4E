@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Palíndromo</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Pilas</a>
+                <h1 class="title">Ejercicio 2: Verificar Palíndromo</h1>
+                <p class="subtitle">Usando pilas para verificar palíndromos</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Este ejercicio verifica si una palabra o frase es un palíndromo usando pilas.
+                    Un palíndromo se lee igual de izquierda a derecha que de derecha a izquierda.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Ejemplos:</strong> "anilina", "reconocer", "anita lava la tina"</p>
+                </div>
+
+                <!-- Sección Interactiva -->
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="palabraInput">Ingresa una palabra o frase:</label>
+                            <input type="text" id="palabraInput" placeholder="Ej: anilina">
+                        </div>
+                        <button onclick="verificarPalindromo()" class="btn btn-primary">✓ Verificar</button>
+                        <button onclick="limpiar()" class="btn btn-secondary">🗑️ Limpiar</button>
+                    </div>
+
+                    <div id="resultado" class="palindrome-result"></div>
+
+                    <div class="stack-visualization">
+                        <div class="stack-section">
+                            <h4>📚 Pila Izquierda</h4>
+                            <div id="pilaIzquierda" class="stack-container"></div>
+                        </div>
+                        
+                        <div class="result-section">
+                            <h4>🔍 Comparación</h4>
+                            <div id="comparacion" class="result-box"></div>
+                        </div>
+                        
+                        <div class="stack-section">
+                            <h4>📚 Pila Derecha</h4>
+                            <div id="pilaDerecha" class="stack-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/pilas/ejercicio2.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Invertir palabra</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Pilas</a>
+                <h1 class="title">Ejercicio 1: Invertir Palabra</h1>
+                <p class="subtitle">Usando una pila de caracteres</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Este ejercicio utiliza una pila (Stack) para invertir el orden de los caracteres de una palabra.
+                    Cada carácter se apila (push) y luego se desapila (pop) para obtener el orden inverso.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Ejemplo:</strong> "HOLA" → "ALOH"</p>
+                </div>
+
+                <!-- Sección Interactiva -->
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="palabraInput">Ingresa una palabra o frase:</label>
+                            <input type="text" id="palabraInput" placeholder="Ej: HOLA">
+                        </div>
+                        <button onclick="invertirPalabra()" class="btn btn-primary">🔄 Invertir</button>
+                        <button onclick="limpiar()" class="btn btn-secondary">🗑️ Limpiar</button>
+                    </div>
+
+                    <div class="stack-visualization">
+                        <div class="result-section">
+                            <h4>📝 Palabra Original</h4>
+                            <div id="palabraOriginal" class="result-box"></div>
+                        </div>
+                        
+                        <div class="stack-section">
+                            <h4>📚 Pila (Stack)</h4>
+                            <div id="pilaVisualizacion" class="stack-container"></div>
+                        </div>
+                        
+                        <div class="result-section">
+                            <h4>🔄 Palabra Invertida</h4>
+                            <div id="palabraInvertida" class="result-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/pilas/ejercicio1.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

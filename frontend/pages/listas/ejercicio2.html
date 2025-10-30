@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Pares e Impares</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Listas</a>
+                <h1 class="title">Ejercicio 2: Pares e Impares</h1>
+                <p class="subtitle">Clasificación de números aleatorios</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Este ejercicio genera números aleatorios y los clasifica automáticamente en dos listas separadas:
+                    una para números pares y otra para números impares.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> Este ejercicio demuestra el uso de listas para clasificación de datos según criterios específicos.</p>
+                </div>
+
+                <!-- Sección Interactiva -->
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="cantidadNumeros">¿Cuántos números deseas generar?</label>
+                            <input type="number" id="cantidadNumeros" placeholder="Ej: 10" min="1" max="100" value="10">
+                        </div>
+                        <button onclick="generarNumeros()" class="btn btn-primary">🎲 Generar Números</button>
+                        <button onclick="limpiarListas()" class="btn btn-secondary">🗑️ Limpiar Todo</button>
+                    </div>
+
+                    <div class="lists-container">
+                        <div class="list-box">
+                            <h4>➗ Números Pares</h4>
+                            <div id="numerosPares" class="number-list"></div>
+                            <p class="total-count" id="totalPares">Total: 0 números</p>
+                        </div>
+                        
+                        <div class="list-box">
+                            <h4>🔢 Números Impares</h4>
+                            <div id="numerosImpares" class="number-list"></div>
+                            <p class="total-count" id="totalImpares">Total: 0 números</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/listas/ejercicio2.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

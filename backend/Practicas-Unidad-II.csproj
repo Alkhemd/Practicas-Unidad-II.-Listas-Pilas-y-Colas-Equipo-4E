@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>PracticasUnidadII</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>PracticasUnidadII.ProgramaPrincipal</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Excluir TODA la carpeta Colas porque son proyectos independientes -->
+    <Compile Remove="Colas\**" />
+    <EmbeddedResource Remove="Colas\**" />
+    <None Remove="Colas\**" />
+    <!-- Excluir los Program.cs de Listas y Pilas porque tienen sus propios Main -->
+    <Compile Remove="Listas\Program.cs" />
+    <Compile Remove="Pilas\Program.cs" />
+  </ItemGroup>
+
+</Project>

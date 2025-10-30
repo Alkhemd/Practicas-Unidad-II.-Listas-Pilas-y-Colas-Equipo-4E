@@ -1,0 +1,24 @@
+{
+  "name": "practicas-unidad-ii",
+  "version": "1.0.0",
+  "description": "Prácticas de Estructuras de Datos - Listas, Pilas y Colas",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "listas": "node src/listas/menu.js",
+    "pilas": "node src/pilas/menu.js",
+    "colas": "node src/colas/menu.js"
+  },
+  "keywords": [
+    "estructuras-datos",
+    "listas",
+    "pilas",
+    "colas"
+  ],
+  "author": "Equipo 4E",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

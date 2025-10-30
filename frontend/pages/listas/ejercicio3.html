@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Aprobados y Reprobados</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Listas</a>
+                <h1 class="title">Ejercicio 3: Aprobados y Reprobados</h1>
+                <p class="subtitle">Control escolar de calificaciones</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Sistema de control escolar que clasifica alumnos en aprobados (calificación ≥ 70) y reprobados (calificación < 70).
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> La calificación mínima aprobatoria es 70.</p>
+                </div>
+
+                <!-- Sección Interactiva -->
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="nombreAlumno">Nombre del alumno:</label>
+                            <input type="text" id="nombreAlumno" placeholder="Ej: Juan Pérez">
+                        </div>
+                        <div class="input-group">
+                            <label for="calificacion">Calificación (0-100):</label>
+                            <input type="number" id="calificacion" placeholder="Ej: 85" min="0" max="100">
+                        </div>
+                        <button onclick="agregarAlumno()" class="btn btn-primary">➕ Agregar Alumno</button>
+                        <button onclick="limpiarListas()" class="btn btn-secondary">🗑️ Limpiar Todo</button>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-card approved">
+                            <h4>✅ Aprobados</h4>
+                            <p class="stat-number" id="totalAprobados">0</p>
+                        </div>
+                        <div class="stat-card failed">
+                            <h4>❌ Reprobados</h4>
+                            <p class="stat-number" id="totalReprobados">0</p>
+                        </div>
+                        <div class="stat-card total">
+                            <h4>📊 Total</h4>
+                            <p class="stat-number" id="totalAlumnos">0</p>
+                        </div>
+                    </div>
+
+                    <div class="lists-container">
+                        <div class="list-box">
+                            <h4>✅ Alumnos Aprobados</h4>
+                            <div id="alumnosAprobados" class="student-list"></div>
+                        </div>
+                        
+                        <div class="list-box">
+                            <h4>❌ Alumnos Reprobados</h4>
+                            <div id="alumnosReprobados" class="student-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/listas/ejercicio3.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

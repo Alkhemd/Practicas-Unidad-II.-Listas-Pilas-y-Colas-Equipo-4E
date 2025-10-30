@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Taller de Pintura</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Colas</a>
+                <h1 class="title">Ejercicio 2: Taller de Pintura</h1>
+                <p class="subtitle">Cola de coches para pintar</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Juego interactivo: Los coches llegan automáticamente cada cierto tiempo. Debes pintar el primer coche con el color correcto antes de que la cola llegue a 5 coches. ¡La velocidad aumenta cada 3 coches pintados!
+                </p>
+
+                <div class="note-box">
+                    <p><strong>🎮 Reglas:</strong> Solo puedes pintar el primer coche. El juego termina si hay 5 coches en cola.</p>
+                </div>
+
+                <div class="interactive-section">
+                    <h3>🎮 JUEGO: PINTAR COCHES</h3>
+                    
+                    <!-- Panel de control del juego -->
+                    <div class="game-controls">
+                        <button onclick="iniciarJuego()" id="btnIniciar" class="btn btn-primary btn-large">▶️ INICIAR JUEGO</button>
+                        <button onclick="pausarJuego()" id="btnPausar" class="btn btn-warning btn-large" style="display:none;">⏸️ PAUSAR</button>
+                        <button onclick="reiniciarJuego()" id="btnReiniciar" class="btn btn-secondary btn-large" style="display:none;">🔄 REINICIAR</button>
+                    </div>
+
+                    <!-- Estadísticas del juego -->
+                    <div class="game-stats">
+                        <div class="stat-card">
+                            <h4>⏱️ Tiempo</h4>
+                            <p class="stat-number" id="tiempoJuego">00:00</p>
+                        </div>
+                        <div class="stat-card approved">
+                            <h4>🎨 Pintados</h4>
+                            <p class="stat-number" id="cochesPintados">0</p>
+                        </div>
+                        <div class="stat-card failed">
+                            <h4>⚠️ En Cola</h4>
+                            <p class="stat-number" id="cochesEnCola">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>⚡ Velocidad</h4>
+                            <p class="stat-number" id="velocidadActual">20s</p>
+                        </div>
+                    </div>
+
+                    <!-- Paleta de colores -->
+                    <div class="color-palette-section">
+                        <h4>🎨 PALETA DE COLORES - Selecciona el color correcto:</h4>
+                        <div id="paletaColores" class="color-palette"></div>
+                    </div>
+
+                    <!-- Cola de coches -->
+                    <div class="game-queue-section">
+                        <h4>🚗 COLA DE COCHES</h4>
+                        <div id="colaCoches" class="game-queue"></div>
+                    </div>
+
+                    <!-- Coches pintados -->
+                    <div class="painted-cars-section">
+                        <h4>✅ COCHES PINTADOS CORRECTAMENTE</h4>
+                        <div id="cochesPintadosLista" class="painted-cars-list"></div>
+                    </div>
+
+                    <!-- Modal de Game Over -->
+                    <div id="gameOverModal" class="modal" style="display:none;">
+                        <div class="modal-content">
+                            <h2>🎮 GAME OVER</h2>
+                            <div id="resultadoFinal"></div>
+                            <button onclick="reiniciarJuego()" class="btn btn-primary btn-large">🔄 JUGAR DE NUEVO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/colas/ejercicio2.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

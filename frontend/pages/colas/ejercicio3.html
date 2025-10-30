@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Estacionamiento</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Colas</a>
+                <h1 class="title">Ejercicio 3: Estacionamiento</h1>
+                <p class="subtitle">Sistema de gestión de estacionamiento</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Sistema de estacionamiento tipo callejón con capacidad ilimitada. Se cobra $2.00 MXN por segundo de estacionamiento. Los autos que llegan cuando está lleno entran en cola de espera.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> Estacionamiento tipo callejón sin límite de capacidad. Tarifa: $2.00 MXN por segundo.</p>
+                </div>
+
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="placaAuto">Placa del auto:</label>
+                            <input type="text" id="placaAuto" placeholder="Ej: ABC-123">
+                        </div>
+                        <div class="input-group">
+                            <label for="propietario">Propietario:</label>
+                            <input type="text" id="propietario" placeholder="Ej: Juan Pérez">
+                        </div>
+                        <button onclick="registrarEntrada()" class="btn btn-primary">🚗 Registrar Entrada</button>
+                        <button onclick="registrarSalida()" class="btn btn-success">🚪 Registrar Salida</button>
+                        <button onclick="limpiar()" class="btn btn-secondary">🗑️ Limpiar</button>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <h4>🅿️ Ocupados</h4>
+                            <p class="stat-number" id="espaciosOcupados">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>⏳ En Espera</h4>
+                            <p class="stat-number" id="autosEspera">0</p>
+                        </div>
+                        <div class="stat-card approved">
+                            <h4>✓ Disponibles</h4>
+                            <p class="stat-number" id="espaciosDisponibles">20</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>💰 Tarifa</h4>
+                            <p class="stat-number" style="font-size: 1.2rem;">$2.00/seg</p>
+                        </div>
+                    </div>
+
+                    <div class="parking-visualization">
+                        <h4>🅿️ Estado del Estacionamiento</h4>
+                        <div id="espaciosDisplay" class="parking-grid"></div>
+                    </div>
+
+                    <div class="queue-section">
+                        <h4>⏳ Cola de Espera</h4>
+                        <div id="colaEspera" class="queue-list"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/colas/ejercicio3.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

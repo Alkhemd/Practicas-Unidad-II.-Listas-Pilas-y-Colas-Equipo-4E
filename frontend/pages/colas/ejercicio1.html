@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Ventanilla de Banco</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Colas</a>
+                <h1 class="title">Ejercicio 1: Ventanilla de Banco</h1>
+                <p class="subtitle">Sistema de atención con cola FIFO</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Sistema de cola para atención en ventanilla de banco. Los clientes se atienden en orden de llegada (FIFO: First In, First Out).
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> Capacidad máxima: 10 clientes en cola.</p>
+                </div>
+
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="controls">
+                        <div class="input-group">
+                            <label for="nombreCliente">Nombre del cliente:</label>
+                            <input type="text" id="nombreCliente" placeholder="Ej: Juan Pérez">
+                        </div>
+                        <div class="input-group">
+                            <label for="movimiento">Tipo de movimiento:</label>
+                            <select id="movimiento">
+                                <option value="Depósito">Depósito</option>
+                                <option value="Retiro">Retiro</option>
+                                <option value="Pago">Pago</option>
+                                <option value="Consulta">Consulta</option>
+                            </select>
+                        </div>
+                        <button onclick="agregarCliente()" class="btn btn-primary">➕ Agregar a Cola</button>
+                        <button onclick="atenderCliente()" class="btn btn-success">✓ Atender Cliente</button>
+                        <button onclick="limpiarCola()" class="btn btn-secondary">🗑️ Limpiar</button>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <h4>👥 En Cola</h4>
+                            <p class="stat-number" id="totalCola">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>✓ Atendidos</h4>
+                            <p class="stat-number" id="totalAtendidos">0</p>
+                        </div>
+                    </div>
+
+                    <div class="queue-visualization">
+                        <h4>🏦 Cola de Atención</h4>
+                        <div id="colaDisplay" class="queue-container"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/colas/ejercicio1.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>

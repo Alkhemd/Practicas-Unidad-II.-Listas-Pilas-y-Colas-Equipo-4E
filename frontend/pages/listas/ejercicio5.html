@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Listar palabras por letra</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <a href="menu.html" class="back-link">← Volver a Listas</a>
+                <h1 class="title">Ejercicio 5: Palabras por Letra</h1>
+                <p class="subtitle">Clasificación alfabética de palabras</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="exercise-detail">
+                <h2>📋 Descripción del Ejercicio</h2>
+                <p class="description">
+                    Sistema que agrupa palabras según su letra inicial, organizándolas alfabéticamente.
+                </p>
+
+                <div class="note-box">
+                    <p><strong>💡 Nota:</strong> Las palabras se agrupan automáticamente por su primera letra.</p>
+                </div>
+
+                <!-- Sección Interactiva -->
+                <div class="interactive-section">
+                    <h3>🎮 Ejercicio Interactivo</h3>
+                    
+                    <div class="word-input-section">
+                        <div class="controls">
+                            <div class="input-group">
+                                <label for="palabraInput">Ingresa una palabra:</label>
+                                <input type="text" id="palabraInput" placeholder="Ej: Manzana">
+                            </div>
+                            <button onclick="agregarPalabra()" class="btn btn-primary">➕ Agregar Palabra</button>
+                            <button onclick="limpiarPalabras()" class="btn btn-secondary">🗑️ Limpiar Todo</button>
+                        </div>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-card total">
+                            <h4>📝 Total de Palabras</h4>
+                            <p class="stat-number" id="totalPalabras">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>🔤 Letras Diferentes</h4>
+                            <p class="stat-number" id="totalLetras">0</p>
+                        </div>
+                    </div>
+
+                    <div id="palabrasDisplay" class="words-display"></div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../../js/listas/ejercicio5.js"></script>
+
+        <footer class="footer">
+            <p>&copy; 2025 Equipo 4E - Estructuras de Datos</p>
+        </footer>
+    </div>
+</body>
+</html>
